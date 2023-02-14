@@ -1,4 +1,6 @@
 .titleContainer{
-    background-color: green;
+    background-color: rgb(48, 47, 47);
     height: 100vh;
+    position: relative;
+    z-index: -10;
 }

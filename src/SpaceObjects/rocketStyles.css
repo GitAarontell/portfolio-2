@@ -1,0 +1,76 @@
+
+
+.rocketContainer{
+    position:relative;
+    height: 4.5vw;
+    width: 12vw;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-right: .25vw solid rgb(151, 118, 99);
+    border-left: 0.5vw solid rgb(94, 92, 92);
+    background-color: antiquewhite;
+    box-shadow: inset 0 0 50px rgb(153, 113, 90);
+    animation: rocketMovement 8s ease-in infinite;
+}
+
+.rim{
+    position: absolute;
+    height: 3.5vw;
+    width: 3.5vw;
+    border-radius: 50%;
+    background-color: rgb(96, 98, 99);
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+.window{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: rgb(145, 205, 243);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+
+.jetBurn{
+    height: 50px;
+    width: 150px;
+    background-image: linear-gradient(to right, transparent, rgba(175, 86, 34, 0.353));
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    transform: translate(0, -50%);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    animation: backBurn .5s ease-in infinite;
+    z-index: -1;
+}
+
+@keyframes frontBurn {
+    0% {box-shadow: -3px 0 10px rgb(200, 106, 106);}
+    50% {box-shadow: -5px 0 15px rgb(175, 86, 34);}
+    100% {box-shadow: -3px 0 10px rgb(200, 106, 106);}
+}
+
+@keyframes backBurn {
+    0% {width: 150px; height: 50px}
+    50% {width: 143px; height: 48px}
+    100% {width: 150px; height: 50px}
+
+}
+
+@keyframes rocketMovement {
+    0% {left: 50%}
+    25% {left: 53%}
+    50% {left: 50%}
+    100%{left: 50%}
+}
