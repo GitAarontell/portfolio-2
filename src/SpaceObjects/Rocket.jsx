@@ -8,7 +8,7 @@ function Rocket({top, left}) {
                 <div className='window'></div>
             </div>
             <div className='jetBurn'></div>
-            <div></div>
+            <div className='speedLines'></div>
         </div>
     );
 }
