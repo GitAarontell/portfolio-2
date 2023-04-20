@@ -1,11 +1,10 @@
 import React from 'react';
-import './starstyles.css'
+import './starStyles.css';
 
-function Star({top, left}) {
-    return (
-        <div className='starContainer' style={{top: `${top}`, left:`${left}`}}>
-            <div className="star2"></div>
-        </div>
+function Star () {
+    // 1190 is what is used for css vw ratio
+    return(
+        <div className='star'></div>
     );
 }
 
